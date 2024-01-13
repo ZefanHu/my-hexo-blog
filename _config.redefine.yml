@@ -5,19 +5,19 @@ info:
 
 ##
 defaults:
-    favicon: /images/favicon.ico
-    logo: 
+    # favicon: /images/favicon.ico
+    # logo: 
     avatar: /images/favicon.ico
 
 ##主要颜色将影响按钮、进度条、链接和选定组件的颜色。
-colors:
-    primary:
+# colors:
+#     primary:
 
 ##顶部进度条
-global:
-    scroll_progress:
-        bar: true
-        percentage: false
+# global:
+#     scroll_progress:
+#         bar: true
+#         percentage: false
 
 fontawesome: # select fontawesome versions you want to use, in order to reduce the loading time, select as few as possible
     thin: false # use fontawesome thin version or not
@@ -39,10 +39,13 @@ home_banner:
     #     family: false
     #     url: 
     social_links: 
+        enable: true
         links:
-            github: https://github.com
+            github: https://github.com/ZefanHu
+            fa-solid fa-at: mailto:bufantech@outlook.com
         qrs:
             weixin: https://cdn.jsdelivr.net/gh/ZefanHu/blogImage@main/img/photo_2024-01-13_03-54-02.jpg
+
 
 navbar:
   links:
@@ -105,6 +108,11 @@ comment:
     config:
         waline:
             serverUrl: https://blogcomment.aptzone.cc/
+
+plugins:
+  # RSS feed. Requires hexo-generator-feed (npm i hexo-generator-feed). See https://github.com/hexojs/hexo-generator-feed
+  feed:
+    enable: true # Whether to enable
 
 footer:
     runtime: false

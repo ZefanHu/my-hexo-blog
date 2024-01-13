@@ -1,5 +1,5 @@
 ---
-title: Java-Basic
+title: Java Basic
 date: 2024-01-13 20:17:10
 tags: 
     - "Java"
