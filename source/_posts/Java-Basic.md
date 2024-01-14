@@ -1,6 +1,8 @@
 ---
 title: Java Basic
 date: 2024-01-13 20:17:10
+categories: 
+    - "Java Web"
 tags: 
     - "Java"
     - "Job-Application"

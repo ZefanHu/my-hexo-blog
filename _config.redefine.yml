@@ -13,6 +13,15 @@ defaults:
 # colors:
 #     primary:
 
+# SITE CUSTOMIZATION >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
+# Docs: https://redefine-docs.ohevan.com/basic/global
+global:
+  # Google Analytics
+  google_analytics:
+    enable: true # Whether to enable Google Analytics
+    id:  G-WJY1GFVTXV
+# SITE CUSTOMIZATION <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
+
 ##顶部进度条
 # global:
 #     scroll_progress:
@@ -44,31 +53,32 @@ home_banner:
             github: https://github.com/ZefanHu
             fa-solid fa-at: mailto:bufantech@outlook.com
         qrs:
-            weixin: https://cdn.jsdelivr.net/gh/ZefanHu/blogImage@main/img/photo_2024-01-13_03-54-02.jpg
+            weixin: https://cdn.jsdelivr.net/gh/ZefanHu/blogImage@main/img/sgfcxf.jpg
 
 
 navbar:
-  links:
-    Home: # 一级菜单栏名称
-      path: / # 网址，可以为相对路径或者绝对路径
-      icon: fa-regular fa-house # Fontawesome图标名称（可选）
-    Google: # 一级菜单栏名称
-      path: https://www.google.com/ # 网址，可以为相对路径或者绝对路径
-      icon: fa-brands fa-google # Fontawesome图标名称（可选）
-    About: # 一级菜单栏名称
-      icon: fa-regular fa-user # Fontawesome图标名称（可选）
-      submenus: # 二级菜单栏
-        Me: /about # 二级菜单栏名称：网址
-        Github: https://github.com/EvanNotFound/hexo-theme-redefine
+    links:
+        Home: # 一级菜单栏名称
+            path: / # 网址，可以为相对路径或者绝对路径
+            icon: fa-regular fa-house # Fontawesome图标名称（可选）
+        文章:
+            submenus:
+                归档: /archives
+                标签: /tags
+                分类: /categories
+        About: # 一级菜单栏名称
+            icon: fa-regular fa-user # Fontawesome图标名称（可选）
+            submenus: # 二级菜单栏
+                Me: /about # 二级菜单栏名称：网址
+                Github: https://github.com/EvanNotFound/hexo-theme-redefine
+    search:
+        enable: true
 
-search: 
-    enable: true
-    preload: true
 
 home: 
     sidebar: 
         enable: true
-        position: left
+        position: right
         announcement:
         links:
             Archives: # Display name
@@ -77,6 +87,9 @@ home:
             Tags: # Display name
                 path: /tags # Path
                 icon: fa-regular fa-tags # Icon, can be empty
+            Categories: #取名随意
+                icon: fa-solid fa-folder #图标
+                path: /categories/ #链接
 
 articles:
     style:
@@ -115,7 +128,8 @@ plugins:
     enable: true # Whether to enable
 
 footer:
-    runtime: false
-    icon: 
+    runtime: true
+    icon: '<i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 0.5s; color: #f54545"></i>'
     customize: You're right
+    start: 2024/1/11 12:00:00
 
