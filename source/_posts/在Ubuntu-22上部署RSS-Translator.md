@@ -12,14 +12,13 @@ thumbnail: https://cdn.jsdelivr.net/gh/ZefanHu/blogImage@main/img/20240126003912
 首先，我们需要创建一个新的目录来存放下载的脚本。可以使用以下命令：
 
 ```
-bashmkdir -p ~/rss-translator
+mkdir -p ~/rss-translator
 cd ~/rss-translator
 ```
 
 然后，我们使用`wget`命令下载`install_update.sh`脚本：
 
 ```
-bash
 wget "https://raw.githubusercontent.com/rss-translator/RSS-Translator/main/deploy/install_update.sh"
 ```
 
@@ -28,20 +27,18 @@ wget "https://raw.githubusercontent.com/rss-translator/RSS-Translator/main/deplo
 接下来，我们需要赋予脚本执行权限：
 
 ```
-bash
 sudo chmod +x install_update.sh
 ```
 
 然后，执行脚本来安装或更新项目：
 
 ```
-bash
 sudo ./install_update.sh
 ```
 
 
 至此，基本的搭建就完成了。如果需要添加ssl，可以去查看[官方教程](https://github.com/rss-translator/RSS-Translator?tab=readme-ov-file#开启ssl)。
-然后我们可以使用http://0.0.0.0:8000访问网站，也可以配置反代域名访问。
+然后我们可以使用http://0.0.0.0:8000 访问网站，也可以配置反代域名访问。
 ![](https://cdn.jsdelivr.net/gh/ZefanHu/blogImage@main/img/20240126004127.png)
 
 ### 解决可能的问题
@@ -57,7 +54,6 @@ sudo ./install_update.sh
 1. 首先，需要检查系统中已经安装的Python版本。可以使用以下命令：
 
 ```
-bash
 ls /usr/bin/python*
 ```
 
@@ -66,7 +62,7 @@ ls /usr/bin/python*
 1. 接下来，你需要使用`update-alternatives`命令来设置`python`的默认版本。首先，你需要为`python3.10`和`python3.11`创建`update-alternatives`条目。可以使用以下命令：
 
 ```
-bashsudo update-alternatives --install /usr/bin/python python /usr/bin/python3.10 1
+sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.10 1
 sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.11 2
 ```
 
@@ -75,7 +71,6 @@ sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.11 2
 1. 然后，你可以使用`update-alternatives`命令来更改默认的Python版本。可以使用以下命令：
 
 ```
-bash
 sudo update-alternatives --config python
 ```
 

@@ -66,5 +66,5 @@ services:
       - ./letsencrypt:/etc/letsencrypt
 ```
 
-- 默认用户名为：`admin@example.com`
-- 默认密码为：`changeme`
+- 默认用户名为：admin@example.com
+- 默认密码为：changeme
