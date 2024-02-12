@@ -16,11 +16,16 @@ Docker和Docker Compose是两个非常强大的工具，它们可以帮助你管
  curl -fsSL https://get.docker.com | bash -s docker
 ```
 
+一键安装版本似乎有些低，某些语法可能不支持导致安装其他docker容器的时候报错。这时候可以选择手动安装。参考链接如下：
+
+https://docs.docker.com/engine/install/ubuntu/
+
 一键安装docker-compose:
 
 ```
 apt install docker-compose
 ```
+
 
 ### Docker 常用命令
 

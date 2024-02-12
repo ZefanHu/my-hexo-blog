@@ -59,6 +59,7 @@ home_banner:
         links:
             github: https://github.com/ZefanHu
             fa-solid fa-at: mailto:bufantech@outlook.com
+
         qrs:
             weixin: https://cdn.jsdelivr.net/gh/ZefanHu/blogImage@main/img/sgfcxf.jpg
 
@@ -78,6 +79,9 @@ navbar:
             submenus: # 二级菜单栏
                 Me: /about # 二级菜单栏名称：网址
                 Github: https://github.com/EvanNotFound/hexo-theme-redefine
+                ServerStatus: https://serverstatus.aptzone.cc
+                cloudreve: https://cloudreve.aptzone.cc
+
     search:
         enable: true
 
