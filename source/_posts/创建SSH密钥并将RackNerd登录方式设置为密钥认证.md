@@ -19,6 +19,7 @@ Termius提供了一个内置的SSH密钥生成器，非常适合在移动设备�
 
 - 打开Termius，点击右下角的小齿轮图标进入`Settings`。
 - 选择`Keychain`，然后点击旁边的`key`图标旁的箭头，选择`Generate Key`。
+![](https://cdn.jsdelivr.net/gh/ZefanHu/blogImage@main/img/20240209233951.png)
 
 ### 使用MobaXterm或Puttygen
 

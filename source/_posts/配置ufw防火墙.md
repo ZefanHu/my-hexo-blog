@@ -1,6 +1,6 @@
 ---
 title: 配置ufw防火墙
-date: 2024-02-11 00:50:54
+date: 2024-02-10 00:50:54
 tags: 
     - "Linux"
 thumbnail: https://cdn.jsdelivr.net/gh/ZefanHu/blogImage@main/img/20240212004658.png

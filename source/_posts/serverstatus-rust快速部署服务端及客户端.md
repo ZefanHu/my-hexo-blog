@@ -1,6 +1,6 @@
 ---
 title: serverstatus-rust快速部署服务端及客户端
-date: 2024-02-11 00:51:52
+date: 2024-02-07 00:51:52
 tags: 
     - "serverstatus"
 thumbnail: https://cdn.jsdelivr.net/gh/ZefanHu/blogImage@main/img/20240212004901.png
