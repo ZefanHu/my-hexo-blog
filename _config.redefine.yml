@@ -49,7 +49,7 @@ home_banner:
     #     dark:
     title: Love Forever
     subtitle:
-        text: ["从来没有真正的绝境, 只有心灵的迷途", "大鹏一日同风起，扶摇直上九万里。"]
+        text: ["从来没有真正的绝境, 只有心灵的迷途。", "大鹏一日同风起，扶摇直上九万里。"]
     # custom_font:
     #     enable: true
     #     family: false

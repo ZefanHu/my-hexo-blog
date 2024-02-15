@@ -22,6 +22,23 @@ thumbnail: https://cdn.jsdelivr.net/gh/ZefanHu/blogImage@main/img/20240113232846
 
 * **构建目录** public
 
+cloudflare page上面有一些奇怪的问题, 于是我尝试了将hexo 博客部署到自己的服务器上, 参考下面的博客
+https://byer.top/posts/63e61cee.html
+由于我的vps需要通过密钥连接, 按照上面博客无脑操作会报错, 我在本地电脑添加了一些配置:
+确保私钥格式正确：Git和大多数SSH客户端期望使用OpenSSH格式的私钥。如果你的私钥是PuTTY私钥格式（.ppk），你可能需要使用PuTTY的puttygen工具将其转换为OpenSSH格式。
+
+配置SSH：在你的用户目录下（通常是C:\Users\<你的用户名>\），找到或创建一个.ssh目录，并在其中创建一个名为config的文件（没有文件扩展名）。
+
+在这个config文件中，添加如下配置（根据你的实际路径修改密钥路径）：
+```bash
+Host 142.171.xxx.xxx
+    HostName 142.171.xxx.xxx
+    User root
+    IdentityFile C:/Users/Administrator/Downloads/mobaxterm-private-key/1002
+    IdentitiesOnly yes
+```
+
+
 ## Git Guideline
 
 **Git 是一个强大的版本控制系统，它允许多人协作开发项目，同时跟踪和管理代码的历史变更。以下是一些在学习Git过程中最重要的命令和概念。**
