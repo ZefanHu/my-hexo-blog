@@ -79,6 +79,7 @@ navbar:
             submenus: # 二级菜单栏
                 Me: /about # 二级菜单栏名称：网址
                 1panel: https://rn1panel.aptzone.cc/963c7170bd
+                drawio: https://draw.aptzone.cc
                 FreshRSS: https://freshrss.aptzone.cc
                 cloudreve: https://cloudreve.aptzone.cc
                 ServerStatus: https://serverstatus.aptzone.cc
