@@ -1,0 +1,22 @@
+- links_category: 友情链接
+  has_thumbnail: true
+  list: 
+    - name: Bensz's Blog
+      link: https://blognas.hwb0307.com/
+      description: 浮名本是身外物，不著方寸也风流。
+      avatar: https://blognas.hwb0307.com/logo.jpg
+      thumbnail: https://cdn.jsdelivr.net/gh/ZefanHu/blogImage@main/img/bbmb-130.jpg # has_thumbnail 为 true 时才需要
+ 
+# - links_category: Normal
+#   has_thumbnail: false
+#   list: 
+#     - name: Example Site
+#       link: https://example.com
+#       description: Example Site Description
+#       avatar: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+#     - name: Example Site 2
+#       link: https://example.com
+#       description: Example Site Description
+#       avatar: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+ 
+ 

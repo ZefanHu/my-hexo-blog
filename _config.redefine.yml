@@ -82,7 +82,9 @@ navbar:
                 FreshRSS: https://freshrss.aptzone.cc
                 cloudreve: https://cloudreve.aptzone.cc
                 ServerStatus: https://serverstatus.aptzone.cc
-                
+        Friends: #取名随意
+            icon: fa-solid fa-link #图标
+            path: /links/
     search:
         enable: true
 
@@ -127,12 +129,25 @@ articles:
     lazyload: true
     recommendation:
         enable: true
+# comment:
+#     enable: true
+#     system: waline
+#     config:
+#         waline:
+#             serverUrl: https://blogcomment.aptzone.cc/
+
 comment:
-    enable: true
-    system: waline
-    config:
-        waline:
-            serverUrl: https://blogcomment.aptzone.cc/
+  # Whether to enable comment
+  enable: true
+  # Comment system
+  system: twikoo # waline, gitalk, twikoo, giscus
+  # System configuration
+  config:
+    # Twikoo comment system. See https://twikoo.js.org/
+    twikoo:
+      version: 1.6.10 # Twikoo version, do not modify if you dont know what it is
+      server_url: https://comment.aptzone.cc/
+
 
 plugins:
   # RSS feed. Requires hexo-generator-feed (npm i hexo-generator-feed). See https://github.com/hexojs/hexo-generator-feed
@@ -145,3 +160,6 @@ footer:
     customize: You're right
     start: 2024/1/11 12:00:00
 
+
+page_templates:
+  friends_column: 2
