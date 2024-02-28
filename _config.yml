@@ -108,7 +108,7 @@ theme: redefine
 
 deploy:
   type: git
-  repo: ssh://root@142.171.133.171:22/root/git/blog.git
+  repo: ssh://root@74.48.129.142:22/root/git/blog.git
   branch: master
 
 

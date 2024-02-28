@@ -1,6 +1,6 @@
 info:
     title: Forever
-    author: 胡泽凡
+    author: hu zefan
     url: https://xblog.aptzone.cc/
 
 ##
@@ -49,7 +49,7 @@ home_banner:
     #     dark:
     title: Love Forever
     subtitle:
-        text: ["从来没有真正的绝境, 只有心灵的迷途。", "大鹏一日同风起，扶摇直上九万里。"]
+        text: ["从来没有真正的绝境, 只有心灵的迷途。", "大鹏一日同风起，扶摇直上九万里。", "花有重开日，人无再少年。"]
     # custom_font:
     #     enable: true
     #     family: false
@@ -77,12 +77,9 @@ navbar:
         About: # 一级菜单栏名称
             icon: fa-regular fa-user # Fontawesome图标名称（可选）
             submenus: # 二级菜单栏
-                Me: /about # 二级菜单栏名称：网址
-                1panel: https://rn1panel.aptzone.cc/963c7170bd
-                drawio: https://draw.aptzone.cc
-                FreshRSS: https://freshrss.aptzone.cc
-                cloudreve: https://cloudreve.aptzone.cc
-                ServerStatus: https://serverstatus.aptzone.cc
+                Me: /about # 二级菜单栏名称：网址           
+                个人导航: https://navbar.aptzone.cc/
+
         Friends: #取名随意
             icon: fa-solid fa-link #图标
             path: /links/
@@ -158,8 +155,8 @@ plugins:
 footer:
     runtime: true
     icon: '<i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 0.5s; color: #f54545"></i>'
-    customize: You're right
-    start: 2024/1/11 12:00:00
+    customize: 
+    start: 2024/1/10 12:00:00
 
 
 page_templates:
@@ -174,3 +171,4 @@ cdn:
     # format example: https://cdn.custom.com/hexo-theme-redefine/${version}/source/${path}
     # The ${path} must be in the source folder of the theme
     custom_url: https://cdn.staticfile.net/hexo-theme-redefine/${version}/source/${path}
+    

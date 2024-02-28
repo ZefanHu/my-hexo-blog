@@ -97,3 +97,43 @@ Host 142.171.xxx.xxx
 - **git status**: 查看当前仓库的状态。
 - **git log**: 查看提交历史。
 - **git diff**: 查看文件更改详情。
+
+### 补充
+转载自https://byer.top/posts/63e61cee.html
+安装 Git
+apt-get install git #Debian/Ubuntu
+yum install git #Fedora/RedHat/CentOS
+创建远程仓库
+通过如下代码我们创建一个空的仓库来提交代码。
+
+mkdir /root/git/ #可以自定义为自己的路径
+
+修改文件夹权限
+chown -R $USER:$USER /root/git/
+chmod -R 755 /root/git/
+
+创建远程 GIT 仓库
+cd /root/git
+git init --bare blog.git #可以改为自己的仓库名
+创建 Git 钩子
+执行以下的代码，在 blog.git/hooks 目录下创建一个新的钩子文件：
+
+vim /root/git/blog.git/hooks/post-receive
+
+打开文件后，加入下面的代码：
+git --work-tree=/opt/1panel/apps/openresty/openresty/www/sites/blog/index --git-dir=/root/git/blog.git checkout -f
+# --work-tree的值是你的前端代码保存的目录，我这里使用的1Panel，使用其他的可以自己修改文件目录
+# 使用1Panel需要先创建网站，然后在创建文件钩子
+
+使用以下方法保存你的文件，先按下 ESC，输入:wq!，回车即可保存
+将文件保存后，修改文件权限
+chmod +x /root/git/blog.git/hooks/post-receive
+修改_config.yml
+找到_config.yml 的 deploy 一行，修改为如下代码
+
+deploy:
+  - type: git
+    git: 
+      site: ssh://root@ip:22/root/git/blog.git
+
+最后使用 hexo d 即可将其推送到自己的服务器上。

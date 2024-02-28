@@ -43,7 +43,7 @@ sudo ./install_update.sh
 
 ### 解决可能的问题
 
-在使用过程中，可能会遇到一些问题。例如，使用nginx可能会报错`CSRF verification failed. Request aborted.`。这可能是由于Django在处理CSRF验证时，没有正确地获取到原始的主机名和来源。这可能是因为nginx在处理请求时，修改了这些值。在Django的设置中，添加`CSRF_TRUSTED_ORIGINS`变量，这个变量应该包含你的服务器的地址。如果应用使用了SSL，可能需要在Django的设置中，设置`CSRF_COOKIE_SECURE`为`True`。这个设置会让Django在处理带有SSL的请求时，使用安全的cookie。另外，我在改为监听ipv6之后，添加订阅似乎遇到了问题，后来我改回ipv4就可以正常使用了。
+在使用过程中，可能会遇到一些问题。例如，使用nginx可能会报错`CSRF verification failed. Request aborted.`。这可能是由于Django在处理CSRF验证时，没有正确地获取到原始的主机名和来源。这可能是因为nginx在处理请求时，修改了这些值。在Django的设置中，添加`CSRF_TRUSTED_ORIGINS`变量，这个变量应该包含你的服务器的地址。也可以直接在docker-compose.yml里面增加CSRF_TRUSTED_ORIGINS=https: //你的域名
 
 ### 补充
 
