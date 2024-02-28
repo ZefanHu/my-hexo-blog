@@ -9,3 +9,14 @@ comment: true
 **English:**
 
 **I am an ordinary person, but what I pursue is extraordinary. I am like the wind, unrestrained and free. I dance against the wind, fearless of difficulties, and move forward bravely. I have the spirit of a scholar, a passion for knowledge, a zeal for life, and a vision for the future. I am a wind chaser, what I pursue is freedom, ideals, and the true meaning of life.**
+
+轮回
+
+今宵卧榻思过往，明日回首心自放。
+
+昨忆终将明朝望，此刻心思转内方。
+
+是非难辨问心中，怨世莫怨自身空。
+
+超然视野观世态，万物轮回道自通。
+

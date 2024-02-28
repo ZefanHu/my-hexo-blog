@@ -122,8 +122,10 @@ vim /root/git/blog.git/hooks/post-receive
 
 打开文件后，加入下面的代码：
 git --work-tree=/opt/1panel/apps/openresty/openresty/www/sites/blog/index --git-dir=/root/git/blog.git checkout -f
-# --work-tree的值是你的前端代码保存的目录，我这里使用的1Panel，使用其他的可以自己修改文件目录
-# 使用1Panel需要先创建网站，然后在创建文件钩子
+**--work-tree的值是你的前端代码保存的目录，我这里使用的1Panel，使用其他的可以自己修改文件目录**
+
+**使用1Panel需要先创建网站，然后在创建文件钩子** 
+
 
 使用以下方法保存你的文件，先按下 ESC，输入:wq!，回车即可保存
 将文件保存后，修改文件权限

@@ -100,15 +100,14 @@ theme: redefine
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
-#deploy:
-  #type: git
-  #repository: https://github.com/ZefanHu/zefanhu.github.io.git
-  #repository: ssh://root@141.11.90.117:22/root/git/blog.git
-  #branch: main
-
 deploy:
   type: git
-  repo: ssh://root@74.48.129.142:22/root/git/blog.git
-  branch: master
+  repository: https://github.com/ZefanHu/zefanhu.github.io.git
+  branch: main
+
+# deploy:
+#   type: git
+#   repo: ssh://root@74.48.129.142:22/root/git/blog.git
+#   branch: master
 
 
