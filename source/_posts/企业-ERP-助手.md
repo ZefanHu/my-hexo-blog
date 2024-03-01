@@ -5,6 +5,8 @@ sticky: 998
 tags:
     - "Python"
     - "Chatgpt"
+
+thumbnail: https://work.aptzone.cc/https://alist.aptzone.cc/d/GoogleDrive/202403020016095.png
 ---
 
 ERP（企业资源管理）软件是企业的关键软件系统，目前一般使用 GUI 界面，复杂的操
