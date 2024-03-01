@@ -1,5 +1,6 @@
 ---
 title: Hello World
+date: 1970-01-01 00:00:00
 categories: 
     - "Start"
 thumbnail: https://cdn.jsdelivr.net/gh/ZefanHu/blogImage@main/img/20240113201448.png
