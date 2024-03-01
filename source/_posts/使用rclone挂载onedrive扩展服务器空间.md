@@ -92,7 +92,7 @@ touch test && rclone move test bufan:
 rclone mount <配置的云盘名称>:<要挂载的云盘目录> <作为挂载点的本地目录> --copy-links --no-gzip-encoding --no-check-certificate --allow-other --allow-non-empty --umask 000 --daemon
 ```
 比如我用的代码：
-rclone mount bufan:/racknerd /root/bufandrive --copy-links --no-gzip-encoding --no-check-certificate --allow-other --allow-non-empty --umask 000 --daemon
+rclone mount bufan:/racknerd  /root/bufandrive  --copy-links --no-gzip-encoding --no-check-certificate --allow-other --allow-non-empty --umask 000 --daemon
 
 
 输入df -h查看是否挂载成功。

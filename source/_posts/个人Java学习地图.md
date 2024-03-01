@@ -2,6 +2,7 @@
 title: 个人Java学习地图
 date: 2024-03-01 17:25:37
 sticky: 999
+tags:
     - "Java"
     - "Job-Application"
 thumbnail: https://work.aptzone.cc/https://alist.aptzone.cc/d/GoogleDrive/202403011743540.png
